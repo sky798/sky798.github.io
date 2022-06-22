@@ -115,7 +115,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -158,6 +158,76 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/22/ASP.NET%20Core%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%20ASPNETCORE_ENVIRONMENT/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/22/ASP.NET%20Core%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%20ASPNETCORE_ENVIRONMENT/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-06-22 19:55:30 / Modified: 19:53:52" itemprop="dateCreated datePublished" datetime="2022-06-22T19:55:30+08:00">2022-06-22</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="ASP-NET-Core环境变量-ASPNETCORE-ENVIRONMENT"><a href="#ASP-NET-Core环境变量-ASPNETCORE-ENVIRONMENT" class="headerlink" title="ASP.NET Core环境变量 ASPNETCORE_ENVIRONMENT"></a>ASP.NET Core环境变量 ASPNETCORE_ENVIRONMENT</h1><p>​        在开发过程中，我们可能会针对不同的环境进行调试，比如开发环境、预发布环境。我们可以通过修改ASPNETCORE_ENVIRONMENT环境变量来配置不同的运行时环境。</p>
+<h3 id="修改ASPNETCORE-ENVIRONMENT环境变量的两种方式："><a href="#修改ASPNETCORE-ENVIRONMENT环境变量的两种方式：" class="headerlink" title="修改ASPNETCORE_ENVIRONMENT环境变量的两种方式："></a>修改ASPNETCORE_ENVIRONMENT环境变量的两种方式：</h3><p>方式一：在项目上点击右键，在右键菜单选择<strong>属性</strong>选项（快捷键：Alt+Enter）,切换到<strong>调试</strong>选项卡，找到环境变量中名称为<strong>ASPNETCORE_ENVIRONMENT</strong>的变量，修改该变量的值。环境变量框架默认提供了三个值：Development（开发）、Staging（预演）<br>、Production（生产），也可以使用自定义的值。</p>
+<p>PS：vs2022 略有不同，在右键打开<strong>Properties</strong>并切换到<strong>Debug</strong>选择卡后，选择<strong>Debug</strong>分项中的<strong>General</strong>子项，点击<strong>Open debug launch profiles UI</strong>链接，在Launch Profiles窗口即可找到<strong>Environment variables</strong>配置项。</p>
+<p>方式二：打开项目<strong>Properties</strong>目录下的<strong>launchSettings.json</strong>文件，修改<strong>profiles</strong>配置节点下面子节点的<strong>ASPNETCORE_ENVIRONMENT</strong>配置项。</p>
+<p>在程序中，可以通过IHostingEnvironment 接口的4个扩展方法检测当前主机环境。</p>
+<p>IsDevelopment(IHostingEnvironment)     检查当前主机环境名称是否为 Development<br>IsEnvironment(IHostingEnvironment, String)     将当前主机环境名称与指定的值进行比较<br>IsProduction(IHostingEnvironment)     检查当前主机环境名称是否为 Production<br>IsStaging(IHostingEnvironment)     检查当前主机环境名称是否为 Staging</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/01/Hexo%E5%8D%9A%E5%AE%A2%E6%89%93%E5%BC%80%E7%A9%BA%E7%99%BD%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -181,10 +251,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2022-06-01 22:16:50 / Modified: 22:41:55" itemprop="dateCreated datePublished" datetime="2022-06-01T22:16:50+08:00">2022-06-01</time>
+      <time title="Created: 2022-06-01 22:16:50" itemprop="dateCreated datePublished" datetime="2022-06-01T22:16:50+08:00">2022-06-01</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-06-22 20:02:12" itemprop="dateModified" datetime="2022-06-22T20:02:12+08:00">2022-06-22</time>
+      </span>
 
   
 </div>
