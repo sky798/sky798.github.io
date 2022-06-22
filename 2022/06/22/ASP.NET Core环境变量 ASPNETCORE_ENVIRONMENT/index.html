@@ -20,16 +20,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","version":"8.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="ASP.NET Core环境变量 ASPNETCORE_ENVIRONMENT​        在开发过程中，我们可能会针对不同的环境进行调试，比如开发环境、预发布环境。我们可以通过修改ASPNETCORE_ENVIRONMENT环境变量来配置不同的运行时环境。 修改ASPNETCORE_ENVIRONMENT环境变量的两种方式：方式一：在项目上点击右键，在右键菜单选择属性选项（快捷键：Alt+E">
+<meta name="description" content="​        在开发过程中，我们可能会针对不同的环境进行调试，比如开发环境、预发布环境。我们可以通过修改ASPNETCORE_ENVIRONMENT环境变量来配置不同的运行时环境。 修改ASPNETCORE_ENVIRONMENT环境变量的两种方式：方式一：在项目上点击右键，在右键菜单选择属性选项（快捷键：Alt+Enter）,切换到调试选项卡，找到环境变量中名称为ASPNETCORE_ENV">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="ASP.NET Core环境变量 ASPNETCORE_ENVIRONMENT">
 <meta property="og:url" content="http://example.com/2022/06/22/ASP.NET%20Core%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%20ASPNETCORE_ENVIRONMENT/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="ASP.NET Core环境变量 ASPNETCORE_ENVIRONMENT​        在开发过程中，我们可能会针对不同的环境进行调试，比如开发环境、预发布环境。我们可以通过修改ASPNETCORE_ENVIRONMENT环境变量来配置不同的运行时环境。 修改ASPNETCORE_ENVIRONMENT环境变量的两种方式：方式一：在项目上点击右键，在右键菜单选择属性选项（快捷键：Alt+E">
+<meta property="og:description" content="​        在开发过程中，我们可能会针对不同的环境进行调试，比如开发环境、预发布环境。我们可以通过修改ASPNETCORE_ENVIRONMENT环境变量来配置不同的运行时环境。 修改ASPNETCORE_ENVIRONMENT环境变量的两种方式：方式一：在项目上点击右键，在右键菜单选择属性选项（快捷键：Alt+Enter）,切换到调试选项卡，找到环境变量中名称为ASPNETCORE_ENV">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-06-22T11:55:30.680Z">
-<meta property="article:modified_time" content="2022-06-22T11:53:52.979Z">
+<meta property="article:published_time" content="2022-06-22T11:53:50.000Z">
+<meta property="article:modified_time" content="2022-06-22T12:12:37.468Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="ASP.NET Core">
 <meta name="twitter:card" content="summary">
 
 
@@ -37,10 +38,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2022/06/22/ASP.NET%20Core%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%20ASPNETCORE_ENVIRONMENT/","path":"2022/06/22/ASP.NET Core环境变量 ASPNETCORE_ENVIRONMENT/","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2022/06/22/ASP.NET%20Core%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%20ASPNETCORE_ENVIRONMENT/","path":"2022/06/22/ASP.NET Core环境变量 ASPNETCORE_ENVIRONMENT/","title":"ASP.NET Core环境变量 ASPNETCORE_ENVIRONMENT"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title> | Hexo</title>
+<title>ASP.NET Core环境变量 ASPNETCORE_ENVIRONMENT | Hexo</title>
   
 
 
@@ -107,7 +108,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ASP-NET-Core%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F-ASPNETCORE-ENVIRONMENT"><span class="nav-number">1.</span> <span class="nav-text">ASP.NET Core环境变量 ASPNETCORE_ENVIRONMENT</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9ASPNETCORE-ENVIRONMENT%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%9A"><span class="nav-number">1.0.1.</span> <span class="nav-text">修改ASPNETCORE_ENVIRONMENT环境变量的两种方式：</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9ASPNETCORE-ENVIRONMENT%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">修改ASPNETCORE_ENVIRONMENT环境变量的两种方式：</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -125,7 +126,7 @@
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -177,7 +178,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          ASP.NET Core环境变量 ASPNETCORE_ENVIRONMENT
         </h1>
 
         <div class="post-meta-container">
@@ -189,7 +190,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-06-22 19:55:30 / Modified: 19:53:52" itemprop="dateCreated datePublished" datetime="2022-06-22T19:55:30+08:00">2022-06-22</time>
+      <time title="Created: 2022-06-22 19:53:50 / Modified: 20:12:37" itemprop="dateCreated datePublished" datetime="2022-06-22T19:53:50+08:00">2022-06-22</time>
     </span>
 
   
@@ -202,7 +203,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="ASP-NET-Core环境变量-ASPNETCORE-ENVIRONMENT"><a href="#ASP-NET-Core环境变量-ASPNETCORE-ENVIRONMENT" class="headerlink" title="ASP.NET Core环境变量 ASPNETCORE_ENVIRONMENT"></a>ASP.NET Core环境变量 ASPNETCORE_ENVIRONMENT</h1><p>​        在开发过程中，我们可能会针对不同的环境进行调试，比如开发环境、预发布环境。我们可以通过修改ASPNETCORE_ENVIRONMENT环境变量来配置不同的运行时环境。</p>
+        <p>​        在开发过程中，我们可能会针对不同的环境进行调试，比如开发环境、预发布环境。我们可以通过修改ASPNETCORE_ENVIRONMENT环境变量来配置不同的运行时环境。</p>
 <h3 id="修改ASPNETCORE-ENVIRONMENT环境变量的两种方式："><a href="#修改ASPNETCORE-ENVIRONMENT环境变量的两种方式：" class="headerlink" title="修改ASPNETCORE_ENVIRONMENT环境变量的两种方式："></a>修改ASPNETCORE_ENVIRONMENT环境变量的两种方式：</h3><p>方式一：在项目上点击右键，在右键菜单选择<strong>属性</strong>选项（快捷键：Alt+Enter）,切换到<strong>调试</strong>选项卡，找到环境变量中名称为<strong>ASPNETCORE_ENVIRONMENT</strong>的变量，修改该变量的值。环境变量框架默认提供了三个值：Development（开发）、Staging（预演）<br>、Production（生产），也可以使用自定义的值。</p>
 <p>PS：vs2022 略有不同，在右键打开<strong>Properties</strong>并切换到<strong>Debug</strong>选择卡后，选择<strong>Debug</strong>分项中的<strong>General</strong>子项，点击<strong>Open debug launch profiles UI</strong>链接，在Launch Profiles窗口即可找到<strong>Environment variables</strong>配置项。</p>
 <p>方式二：打开项目<strong>Properties</strong>目录下的<strong>launchSettings.json</strong>文件，修改<strong>profiles</strong>配置节点下面子节点的<strong>ASPNETCORE_ENVIRONMENT</strong>配置项。</p>
@@ -216,6 +217,9 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ASP-NET-Core/" rel="tag"># ASP.NET Core</a>
+          </div>
 
         
 
